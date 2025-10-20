@@ -12,7 +12,7 @@ app.get("/:id",(req,res) => {
     res.send(`Hello from ${req.params.id}`)
 })
 
-app.get("/crash", (req,res) => {
+app.get("/app-crash", (req,res) => {
     res.send("App Crashing.....")
     process.exit(1)
 })
